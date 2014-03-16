@@ -17,10 +17,7 @@ namespace Listy.Web
         {
             bundles.Add(new StyleBundle("~/bundles/css")
                             .Include("~/Content/bootstrap.css", new BootstrapResourcesTransform())
-                            .Include("~/Content/toastr.css")
-                            .IncludeDirectory("~/Content/Css/site/", "*.css", true));
-
-            bundles.Add(new StyleBundle("~/bundles/css/"));
+                            .Include("~/Content/toastr.css"));
 
             // Remember order is important!
             bundles.Add(new ScriptBundle("~/bundles/js")
